@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pattygurumys es una empresa que se dedica a la venta de muñecos de apego amigurumis.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,10 +14,10 @@
 
     <title>Pattygurumys</title>
 </head>
-<body>
+<body class="body">
     <nav class="nav">
         <figure class="nav__logo">
-            <img src="Assets/img/text_Logo_Pattygurumys_240x59.png" alt="Logotipo de Pattygurumys" fetchpriority="high">
+            <img class="nav__img" src="Assets/img/text_Logo_Pattygurumys_240x59.png" alt="Logotipo de Pattygurumys" fetchpriority="high">
         </figure>
 
         <ul class="nav__list">
@@ -26,13 +27,13 @@
             <li class="nav__item"><a href="#" class="nav__link">Nosotros</a></li>
         </ul>
 
-        <button class="nav__button nav__button--open">
+        <button class="nav__button nav__button--open" aria-label="Cerrar menú de navegación">
             <svg width="36px" height="36px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4 6H20M4 12H14M4 18H9" stroke="#3A2318" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </button>
 
-        <button class="nav__button nav__button--close">
+        <button class="nav__button nav__button--close" aria-label="Abrir menú de navegación">
             <svg width="36px" height="36px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4 6H20M4 12H20M4 18H20" stroke="#3A2318" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
@@ -40,29 +41,30 @@
     </nav>
 
     <aside class="aside">
-        <figure class="aside__logo-img">
+        <figure class="aside__logo">
             <img src="Assets/img/aranha_pattygururmys_480px.png"
-                alt="Imagotipo de Pattygurumys" loading="lazy">
+                alt="Imagotipo de Pattygurumys" loading="lazy"
+                class="aside__img">
         </figure>
-        <div class="rectangle"></div>
-        <div class="circle"></div>
+        <div class="aside__rectangle"></div>
+        <div class="aside__circle"></div>
     </aside>
     
     <main class="main">
         <section class="main__hero">
-            <h1 class="hero__title">Muñecos de apego<br>amigurumis</h1>
-            <h2 class="hero__subtitle">~Hecho con mucho amor~</h2>
+            <h1 class="main__title">Muñecos de apego<br>amigurumis</h1>
+            <h2 class="main__subtitle">~Hecho con mucho amor~</h2>
 
-            <button class="hero__button">Consultar por nuestro catálogo</button>
+            <button class="main__button" aria-label="Consultar por nuestro catálogo">Consultar por nuestro catálogo</button>
         </section>
 
         <section class="main__logo">
-            <figure class="main__logo-img">
+            <figure class="logo">
                 <img src="Assets/img/aranha_pattygururmys_120px.png"
                     srcset="Assets/img/aranha_pattygururmys_120px.png 120w,
                             Assets/img/aranha_pattygururmys_240px.png 240w,
                             Assets/img/aranha_pattygururmys_480px.png 480w"
-                    alt="Imagotipo de Pattygurumys" loading="lazy">
+                    alt="Imagotipo de Pattygurumys" loading="lazy" class="logo__img">
             </figure>
         </section>
 
@@ -73,7 +75,7 @@
                     srcset="Assets/img/amigurumi_destacado_charmander_120px.png 120w,
                             Assets/img/amigurumi_destacado_charmander_240px.png 240w,
                             Assets/img/amigurumi_destacado_charmander_480px.png 480w"
-                    alt="Charmander" loading="lazy">
+                    alt="Charmander" loading="lazy" class="product__img">
             </figure>
             
             <figure class="product product--virgen">
@@ -81,7 +83,7 @@
                     srcset="Assets/img/amigurumi_destacado_virgen_120px.png 120w,
                             Assets/img/amigurumi_destacado_virgen_240px.png 240w,
                             Assets/img/amigurumi_destacado_virgen_480px.png 480w"
-                    alt="Virgen" loading="lazy">
+                    alt="Virgen" loading="lazy" class="product__img">
             </figure>
 
             <figure class="product product--munheca">
@@ -89,7 +91,7 @@
                     srcset="Assets/img/amigurumi_destacado_munhecaPersonalizada_120px.png 120w,
                             Assets/img/amigurumi_destacado_munhecaPersonalizada_240px.png 240w,
                             Assets/img/amigurumi_destacado_munhecaPersonalizada_480px.png 480w"
-                    alt="Muñeca personalizada" loading="lazy">
+                    alt="Muñeca personalizada" loading="lazy" class="product__img">
             </figure>
 
             <figure class="product product--ramo">
@@ -97,14 +99,15 @@
                     srcset="Assets/img/amigurumi_destacado_ramo_120px.png 120w,
                             Assets/img/amigurumi_destacado_ramo_240px.png 240w,
                             Assets/img/amigurumi_destacado_ramo_480px.png 480w"
-                    alt="Ramo de flores" loading="lazy">
+                    alt="Ramo de flores" loading="lazy" class="product__img">
             </figure>
 
         </section>
     </main>
 
     <footer class="footer">
-        <p class="footer__text">© 2026 Pattygurumys. Todos los derechos reservados. Desarrollado por <a href="https://github.com/RenatoDiaz18" target="_blank" class="footer__link">Renato Díaz</a></p>
+        <p class="footer__text">© 2026 Pattygurumys. Todos los derechos reservados.</p>
+        <p class="footer__text">Desarrollado por <a href="https://github.com/RenatoDiaz18" target="_blank" class="footer__link">Renato Díaz</a></p>
     </footer>
 </body>
 </html>
